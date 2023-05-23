@@ -42,7 +42,7 @@ class HomeView extends StatelessWidget {
     return AppBar(
       backgroundColor: Colors.black,
       centerTitle: true,
-      title: const Text("Restful API - Dio"),
+      title: const Text("HeadlineHub"),
     );
   }
   
