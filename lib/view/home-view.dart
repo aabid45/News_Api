@@ -10,6 +10,7 @@ import '../controller/post-Controller.dart';
 import '../view/details-view.dart';
 import '../utils/constants.dart';
 
+// ignore: must_be_immutable
 class HomeView extends StatelessWidget {
   HomeView({Key? key}) : super(key: key);
 
@@ -54,7 +55,7 @@ class HomeView extends StatelessWidget {
             ? homeController.scrollListViewUpward()
             : homeController.scrollListViewDownward();
       },
-      backgroundColor: Color.fromARGB(255, 49, 128, 194),
+      backgroundColor: const Color.fromARGB(255, 49, 128, 194),
       child: FaIcon(
         homeController.isListViewScrollToTheDown.value
             ? FontAwesomeIcons.arrowUp
@@ -63,7 +64,7 @@ class HomeView extends StatelessWidget {
     );
   }
 
-  /// When Internet is't Okay, show thsi widget
+  /// When Internet is't Okay, show this widget
   Center _buildNoInternetConnection(BuildContext context) {
     return Center(
       child: Column(
@@ -117,7 +118,7 @@ class HomeView extends StatelessWidget {
                   width: 50,
                   height: 50,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 177, 173, 173),
+                    color: const Color.fromARGB(255, 177, 173, 173),
                     borderRadius: BorderRadius.circular(7),
                   ),
                   child: Center(

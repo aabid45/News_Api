@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import '../controller/post-Controller.dart';
 
 
+// ignore: must_be_immutable
 class DetailsView extends StatelessWidget {
   DetailsView({required this.index, Key? key}) : super(key: key);
   int index;
@@ -15,7 +16,7 @@ class DetailsView extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blueGrey,
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 45, 155, 169),
+        backgroundColor: const Color.fromARGB(255, 45, 155, 169),
         centerTitle: true,
         title: const Text("Details View"),
       ),
